@@ -24,6 +24,15 @@ namespace Kalculator
 
         private void button4_Click(object sender, EventArgs e)
         {
+            int answer = 0;
+            int val1 = Convert.ToInt32(textBox1.Text);
+            int val2 = Convert.ToInt32(textBox2.Text);
+            answer = val1 * val2;
+            label1.Text = answer.ToString();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
