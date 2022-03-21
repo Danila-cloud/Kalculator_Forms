@@ -28,6 +28,8 @@ namespace Kalculator
             int val1 = Convert.ToInt32(textBox1.Text);
             int val2 = Convert.ToInt32(textBox2.Text);
             answer = val1 * val2;
+            label2.Text = "*";
+            label5.Text = "=";
             label1.Text = answer.ToString();
         }
 
@@ -42,6 +44,8 @@ namespace Kalculator
             int val1 = Convert.ToInt32(textBox1.Text);
             int val2 = Convert.ToInt32(textBox2.Text);
             answer = val1 + val2;
+            label2.Text = "+";
+            label5.Text = "=";
             label1.Text = answer.ToString();
         }
 
@@ -51,6 +55,8 @@ namespace Kalculator
             double val1 = Convert.ToDouble(textBox1.Text);
             double val2 = Convert.ToDouble(textBox2.Text);
             answer = val1 / val2;
+            label2.Text = "%";
+            label5.Text = "=";
             label1.Text = answer.ToString();
         }
 
@@ -60,7 +66,14 @@ namespace Kalculator
             int val1 = Convert.ToInt32(textBox1.Text);
             int val2 = Convert.ToInt32(textBox2.Text);
             answer = val1 - val2;
+            label2.Text = "-";
+            label5.Text = "=";
             label1.Text = answer.ToString();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
