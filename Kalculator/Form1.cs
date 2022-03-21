@@ -35,5 +35,32 @@ namespace Kalculator
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int answer = 0;
+            int val1 = Convert.ToInt32(textBox1.Text);
+            int val2 = Convert.ToInt32(textBox2.Text);
+            answer = val1 + val2;
+            label1.Text = answer.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double answer = 0;
+            double val1 = Convert.ToDouble(textBox1.Text);
+            double val2 = Convert.ToDouble(textBox2.Text);
+            answer = val1 / val2;
+            label1.Text = answer.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int answer = 0;
+            int val1 = Convert.ToInt32(textBox1.Text);
+            int val2 = Convert.ToInt32(textBox2.Text);
+            answer = val1 - val2;
+            label1.Text = answer.ToString();
+        }
     }
 }
